@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.form-container{
+    width: 350px;
+    height:400px ;
+    border: 2px solid rgba(225,225,225,0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+}
+form h2{
+    margin:-1vw 0 1vw 0;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+}
+.input {
+    width: 90%;
+    height: 2.5vw;
+    margin: 10px 0 10px 0;
+    position: relative;
+    
+}
+.input input{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(225,225,225,0.5);
+    
+    font-size: 1vw;
+}
+.input input::placeholder{
+  padding: 0 0 0 15px;
+    color: #000;
+    font-weight: 500;
+    font-size: 1vw;
+}
+.input i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+    margin: 0 10px 0 10px;
+}
+.gender{
+    width: 90%;
+    height: 2vw;
+    margin: 8px 0 8px 0;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.gender label input{
+    margin-right: 10px;
+    accent-color: #000;
+}
+button{
+    height: 2vw;
+    width: 8vw;
+    border: none;
+    outline:none;
+    border-radius: 30px;
+    font-size: 1vw;
+    font-weight: 500;
+}
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width:480px) {
+    .form-container {
+        width: 300px;
+        height: 460px;
+    }
+    .input {
+        width: 90%;
+        height: 8.5vw;
+        margin: 21px 0 4px 0;
+        position: relative;
+    }
+    .input input {
+        width: 100%;
+        height: 100%;
+        padding: 4px 20px 4px 20px ;  
+         font-size: 2.7vw;
+    }
+    .input input::placeholder{
+        padding: 0 0 0 10px;
+          color: #000;
+          font-weight: 500;
+          font-size: 2.5vw;
+      }
+      button {
+        height: 7vw;
+        width: 19vw;
+        font-size: 2.3vw;
+        font-weight: 600;
+    }
+    
+    .gender {
+        width: 90%;
+        height: 15px;
+        margin: 20px 0 30px 0;
+        padding: 10px 15px;
+    }
+}
